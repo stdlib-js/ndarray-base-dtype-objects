@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@deno/mod.js';
+import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@v0.1.0-deno/mod.js';
 ```
 
 #### dtypeObjects()
@@ -86,7 +86,7 @@ var out = dtypeObjects();
 
 ```javascript
 import dtypeStrings from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@deno/mod.js';
-import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@deno/mod.js';
+import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@v0.1.0-deno/mod.js';
 
 var dt = dtypeStrings();
 // returns [...]
