@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-dtype-objects/tags). For example,
+
+```javascript
 import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@v0.1.0-esm/index.mjs';
 ```
 
@@ -91,7 +96,7 @@ var out = dtypeObjects();
 <script type="module">
 
 import dtypeStrings from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@esm/index.mjs';
-import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@v0.1.0-esm/index.mjs';
+import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@esm/index.mjs';
 
 var dt = dtypeStrings();
 // returns [...]
