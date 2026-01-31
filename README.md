@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-dtype-objects/tags). For example,
+
+```javascript
 import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@v0.1.0-deno/mod.js';
 ```
 
@@ -86,7 +91,7 @@ var out = dtypeObjects();
 
 ```javascript
 import dtypeStrings from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@deno/mod.js';
-import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@v0.1.0-deno/mod.js';
+import dtypeObjects from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@deno/mod.js';
 
 var dt = dtypeStrings();
 // returns [...]
