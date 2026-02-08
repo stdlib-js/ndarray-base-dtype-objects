@@ -45,43 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-dtype-objects
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-dtypeObjects = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-dtype-objects/tags). For example,
-
-```javascript
-dtypeObjects = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@v0.1.0-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var dtypeObjects = require( 'path/to/vendor/umd/ndarray-base-dtype-objects/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.dtypeObjects;
-})();
-</script>
+var dtypeObjects = require( '@stdlib/ndarray-base-dtype-objects' );
 ```
 
 #### dtypeObjects()
@@ -113,14 +102,9 @@ var out = dtypeObjects();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-objects@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var dtypeStrings = require( '@stdlib/ndarray-base-dtype-strings' );
+var dtypeObjects = require( '@stdlib/ndarray-base-dtype-objects' );
 
 var dt = dtypeStrings();
 // returns [...]
@@ -132,11 +116,6 @@ var i;
 for ( i = 0; i < dt.length; i++ ) {
     console.log( '%s => %s', dt[ i ], o[ dt[ i ] ].description );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -198,8 +177,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-base-dtype-objects.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray-base-dtype-objects
 
-[test-image]: https://github.com/stdlib-js/ndarray-base-dtype-objects/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/ndarray-base-dtype-objects/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/ndarray-base-dtype-objects/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/ndarray-base-dtype-objects/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-base-dtype-objects/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-base-dtype-objects?branch=main
@@ -231,9 +210,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-dtype-objects/main/LICENSE
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/umd
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/ndarray/dtype-ctor]: https://github.com/stdlib-js/ndarray-dtype-ctor/tree/umd
+[@stdlib/ndarray/dtype-ctor]: https://github.com/stdlib-js/ndarray-dtype-ctor
 
 </section>
 
